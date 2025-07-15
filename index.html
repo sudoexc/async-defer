@@ -1,3 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <script defer src="test.js"></script>
+    изза атрибут defer скрипты по очереди загрузяться даже если в test.js меньше кода. минус в том что если script.js слишком большой то маленький test.js будет все равно ждать загрузки script.js
+</head>
+<body>
+    
+
+    defer дает комманду браузеру что он должен продолжать обробатывать страницу и загружать скрипт в фоновом режиме а потом загружить этот скрипт когда оно загрузиться  
+
+    скрипты с defer никогда не блокируют страницу  
+
+    <p>hello world!</p>
+    <p>Second message</p>
+
+</body>
+</html>
+
+defer дает возможность устонавливать четкий порядок что после чего будет грузиться, можем например подключить библиотеку а после наш js код который будет использовать возможности этой библиотеки и зависит от нее и страница наша не блокируеться -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async src="script.js"></script>
+    <script async src="test.js"></script>
+
+    async значит js код будет работать ассинхроно все в фоновом режиме не ждав друг друга
+
+    иногда мы можем подключать какие то различные сторонние скрипты которые не привязаны ни к дом структуру ни к нашим сриптам которые мы сами пишем например какие-то метрики и счетчики им главное им уловить когда юзер заходит на сайт и он не ждет дом структуру и он не зависит от других скриптов
+</head>
+<body>
+    
+    <p>hello world!</p>
+    <p>Second message</p>
+
+</body>
+</html> -->
 
 
 <!DOCTYPE html>
@@ -15,4 +60,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
